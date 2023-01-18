@@ -1,13 +1,16 @@
 class Solution {
 public:
     int fib(int n) {
-        vector<int> a(31, 0);
-        a[0]=0;
-        a[1]=1;
-        for(int i=2; i<31; i++)
+        int a=0, b=1, c=0, count=1;
+        if(n<=1)
+            return n;
+        while(count<n)
         {
-            a[i]=a[i-1]+a[i-2];
+            c=a+b;
+            a=b;
+            b=c;
+            count++;
         }
-        return a[n];
+        return c;
     }
 };
