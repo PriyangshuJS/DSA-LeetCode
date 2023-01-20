@@ -10,8 +10,7 @@ public:
             }
             
             else if(command[i]=='(' && command[i+1]=='a')
-            {       ans+="a";
-                    ans+="l";
+            {       ans+="al";
                     i=i+3;
             }
             
