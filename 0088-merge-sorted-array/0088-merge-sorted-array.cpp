@@ -4,7 +4,7 @@ public:
         
         // Normal Methord 
         int k=0;
-        int arr[200];
+        int arr[m+n];
         int i=0, j=0;
         while(i<m && j<n)
         {
